@@ -2,12 +2,14 @@
   "name": "tinder-0",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://peterson-augusto.github.io/tinder-2",
   "dependencies": {
     "@react-spring/web": "^9.5.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.0",
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
@@ -18,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start:frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
