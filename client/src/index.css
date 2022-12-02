@@ -288,6 +288,10 @@ nav .logo-container .logo {
     color: rgb(255, 255, 255);
 }
 
+.log-out-icon {
+    cursor: pointer;
+}
+
 .img-container {
     height: 30px;
     width: 30px;

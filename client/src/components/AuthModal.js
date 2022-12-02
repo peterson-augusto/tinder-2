@@ -22,7 +22,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
         e.preventDefault()
         try {
             if (isSignUp && (password !== confirmPassword)) {
-                setError('Passwords need to match!')
+                setError('As senhas precisam ser iguais!')
                 return
             }
 
@@ -47,14 +47,14 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
         <div className="auth-modal">
             <div className="close-icon" onClick={handleClick}>ⓧ</div>
 
-            <h2>{isSignUp ? 'CREATE ACCOUNT' : 'LOG IN'}</h2>
-            <p>By clicking Log In, you agree to our terms. Learn how we process your data in our Privacy Policy and Cookie Policy.</p>
+            <h2>{isSignUp ? 'CRIAR UMA CONTA' : 'ENTRAR'}</h2>
+            <p>Ao clicar em Entre, você concorda com os nossos Termos. Saiba como processamos seus dados em nossa Política de Privacidade e Política de Cookies.</p>
             <form onSubmit={handleSubmit}>
                 <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="email"
+                    placeholder="Email"
                     required={true}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -62,7 +62,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
                     type="password"
                     id="password"
                     name="password"
-                    placeholder="password"
+                    placeholder="Senha"
                     required={true}
                     onChange={(e) => setPassword(e.target.value)}
                 />
@@ -70,7 +70,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
                     type="password"
                     id="password-check"
                     name="password-check"
-                    placeholder="confirm password"
+                    placeholder="Confirme sua senha"
                     required={true}
                     onChange={(e) => setConfirmPassword(e.target.value)}
                 />}
@@ -79,7 +79,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
             </form>
 
             <hr />
-            <h2>GET THE APP</h2>
+            <h2>BAIXE O APLICATIVO!</h2>
 
         </div>
     )
