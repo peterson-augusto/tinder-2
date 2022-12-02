@@ -1,6 +1,7 @@
 {
   "name": "tinder-0",
   "version": "0.1.0",
+  "homepage": "https://peterson-augusto.github.io/tinder-2",
   "private": true,
   "dependencies": {
     "@react-spring/web": "^9.5.5",
@@ -18,6 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start:frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
