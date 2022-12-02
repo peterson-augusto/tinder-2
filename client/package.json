@@ -1,15 +1,15 @@
 {
   "name": "tinder-0",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://peterson-augusto.github.io/tinder-2",
+  "private": true,
   "dependencies": {
     "@react-spring/web": "^9.5.5",
+    "@surma/rollup-plugin-off-main-thread": "^2.2.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.0",
-    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
@@ -44,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression": "^7.18.6",
+    "gh-pages": "^4.0.0"
   }
 }
