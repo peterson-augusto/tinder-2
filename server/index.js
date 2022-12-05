@@ -7,7 +7,7 @@ const cors = require('cors')
 const bcrypt = require('bcrypt')
 require('dotenv').config()
 
-const uri = process.env.URI
+const uri = 'mongodb+srv://peterson:7aD8I0uN1g5OEJTT@cluster0.twqdchp.mongodb.net/?retryWrites=true&w=majority'
 
 const app = express()
 app.use(cors())
@@ -23,7 +23,7 @@ app.post('/signup', async (req, res) => {
     const { email, password } = req.body
 
     const generatedUserId = uuidv4()
-    const hashedPassword = await bcrypt.hash(password)
+    const hashedPassword = await bcrypt.hash(password, 10)
 
     try {
         await client.connect()
@@ -33,7 +33,7 @@ app.post('/signup', async (req, res) => {
         const existingUser = await users.findOne({ email })
 
         if (existingUser) {
-            return res.status(409).send('User already exists. Please login')
+            return res.status(409).send('Usuário já existe. Faça login')
         }
 
         const sanitizedEmail = email.toLowerCase()
@@ -79,7 +79,7 @@ app.post('/login', async (req, res) => {
             res.status(201).json({ token, userId: user.user_id })
         }
 
-        res.status(400).json('Invalid Credentials')
+        res.status(400).json('Informações inválidas')
 
     } catch (err) {
         console.log(err)
