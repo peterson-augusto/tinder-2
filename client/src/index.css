@@ -24,14 +24,14 @@ h2 {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 15px;
-    background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+    background: linear-gradient(45deg, rgb(79, 12, 128), rgb(160, 71, 224));
     padding: 12px 30px;
     border-radius: 30px;
     border: none;
 }
 
 .primary-button:hover {
-    background: linear-gradient(260deg, rgb(254, 48, 114), rgb(255, 89, 64));
+    background: linear-gradient(260deg, rgb(79, 12, 128), rgb(160, 71, 224));
 }
 
 .secondary-button {
@@ -61,7 +61,7 @@ nav {
 }
 
 nav .nav-button {
-    color: rgb(254, 48, 114);
+    color: rgb(60, 39, 45);
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 10px 20px;
@@ -72,7 +72,7 @@ nav .nav-button {
 
 nav .nav-button:disabled {
     background-color: rgb(181, 180, 180);
-    color: rgb(189, 42, 90);
+    color: rgb(201, 42, 95);
 }
 
 nav .logo-container {
@@ -206,13 +206,14 @@ nav .logo-container .logo {
     width: 100%
 }
 
-/*---- Dashboard ----*/
+/*-------- Dashboard  --------*/
 .dashboard {
     display: flex;
     justify-content: space-between;
 }
 
 .dashboard .swipe-container {
+    background-color: rgb(87, 10, 142);
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -231,7 +232,6 @@ nav .logo-container .logo {
 }
 
 .card {
-    position: relative;
     width: 400px;
     height: 650px;
     border-radius: 30px;
@@ -249,7 +249,7 @@ nav .logo-container .logo {
     padding: 10px;
 }
 
-/*---- Chat Container ----*/
+/*-------- Chat Container --------*/
 .chat-container {
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
@@ -260,7 +260,7 @@ nav .logo-container .logo {
 }
 
 .chat-container .chat-container-header {
-    background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+    background: linear-gradient(45deg, rgb(79, 12, 128), rgb(160, 71, 224));
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -270,7 +270,7 @@ nav .logo-container .logo {
 .chat-container .option {
     border: none;
     background-color: rgb(255, 255, 255);
-    border-bottom: solid 4px rgb(243, 33, 33);
+    border-bottom: solid 4px rgb(79, 12, 128);
     font-size: 20px;
     margin: 2px;
     padding: 10px;
@@ -286,10 +286,6 @@ nav .logo-container .logo {
     align-items: center;
     padding: 20px;
     color: rgb(255, 255, 255);
-}
-
-.log-out-icon {
-    cursor: pointer;
 }
 
 .img-container {

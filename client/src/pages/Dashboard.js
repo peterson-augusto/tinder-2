@@ -8,7 +8,7 @@ const Dashboard = () => {
     const [user, setUser] = useState(null)
     const [genderedUsers, setGenderedUsers] = useState(null)
     const [lastDirection, setLastDirection] = useState()
-    const [cookies] = useCookies(['user'])
+    const [cookies, setCookie, removeCookie] = useCookies(['user'])
 
     const userId = cookies.UserId
 
@@ -36,7 +36,6 @@ const Dashboard = () => {
 
     useEffect(() => {
         getUser()
-        getGenderedUsers()
     }, [])
 
     useEffect(() => {

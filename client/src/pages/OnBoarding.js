@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const OnBoarding = () => {
-    const [cookies] = useCookies(['user'])
+    const [cookies, setCookie, removeCookie] = useCookies(['user'])
     const [formData, setFormData] = useState({
         user_id: cookies.UserId,
         first_name: '',
@@ -27,6 +27,7 @@ const OnBoarding = () => {
         e.preventDefault()
         try {
             const response = await axios.put('http://localhost:8000/user', { formData })
+            console.log(response)
             const success = response.status === 200
             if (success) navigate('/dashboard')
         } catch (err) {
@@ -202,7 +203,7 @@ const OnBoarding = () => {
                             required={true}
                         />
                         <div className="photo-container">
-                            {formData.url && <img src={formData.url} alt="profile pic preview" />}
+                            {formData.url && <img src={formData.url} alt="foto de perfil" />}
                         </div>
 
 

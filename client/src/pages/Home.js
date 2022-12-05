@@ -6,8 +6,7 @@ import { useCookies } from "react-cookie"
 const Home = () => {
     const [showModal, setShowModal] = useState(false)
     const [isSignUp, setIsSignUp] = useState(true)
-    const [cookies, removeCookie] = useCookies(['user'])
-
+    const [cookies, setCookie, removeCookie] = useCookies(['user'])
     const authToken = cookies.AuthToken
 
     const handleClick = () => {
@@ -31,9 +30,9 @@ const Home = () => {
                 setIsSignUp={setIsSignUp}
             />
             <div className="home">
-                <h1 className="primary-title">Deslize para a direita</h1>
+                <h1 className="primary-title">Swipe Right®</h1>
                 <button className="primary-button" onClick={handleClick}>
-                    {authToken ? 'Sair' : 'Criar uma conta'}
+                    {authToken ? 'Sair' : 'Criar Conta'}
                 </button>
 
 
