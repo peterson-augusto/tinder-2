@@ -32,7 +32,7 @@ const Home = () => {
             <div className="home">
                 <h1 className="primary-title">Deslize para a direita</h1>
                 <button className="primary-button" onClick={handleClick}>
-                    {authToken ? 'sair' : 'Criar Conta'}
+                    {authToken ? 'Sair' : 'Criar Conta'}
                 </button>
 
 

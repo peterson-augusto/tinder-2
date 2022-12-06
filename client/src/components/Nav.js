@@ -7,6 +7,8 @@ const Nav = ({ authToken, minimal, setShowModal, showModal, setIsSignUp }) => {
         setIsSignUp(false);
     };
 
+    minimal = false
+
     return (
         <nav>
             <div className="logo-container">

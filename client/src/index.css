@@ -62,7 +62,7 @@ nav {
 
 nav .nav-button {
     color: rgb(60, 39, 45);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(216, 198, 228);
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -72,7 +72,7 @@ nav .nav-button {
 
 nav .nav-button:disabled {
     background-color: rgb(181, 180, 180);
-    color: rgb(201, 42, 95);
+    color: rgb(87, 10, 142);
 }
 
 nav .logo-container {
@@ -314,3 +314,5 @@ nav .logo-container .logo {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 551px) {}

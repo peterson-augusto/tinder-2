@@ -48,7 +48,7 @@ const AuthModal = ({ setShowModal, isSignUp }) => {
             <div className="close-icon" onClick={handleClick}>ⓧ</div>
 
             <h2>{isSignUp ? 'CRIAR UMA CONTA' : 'ENTRAR'}</h2>
-            <p>Ao clicar em Entre, você concorda com os nossos Termos. Saiba como processamos seus dados em nossa Política de Privacidade e Política de Cookies.</p>
+            <p>Ao clicar em Enviar, você concorda com os nossos Termos. Saiba como processamos seus dados em nossa Política de Privacidade e Política de Cookies.</p>
             <form onSubmit={handleSubmit}>
                 <input
                     type="email"
