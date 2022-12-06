@@ -30,9 +30,9 @@ const Home = () => {
                 setIsSignUp={setIsSignUp}
             />
             <div className="home">
-                <h1 className="primary-title">Swipe Right®</h1>
+                <h1 className="primary-title">Deslize para a direita</h1>
                 <button className="primary-button" onClick={handleClick}>
-                    {authToken ? 'Signout' : 'Create Account'}
+                    {authToken ? 'sair' : 'Criar Conta'}
                 </button>
 
 
