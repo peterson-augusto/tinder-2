@@ -20,11 +20,12 @@ const Home = () => {
         setIsSignUp(true)
     }
 
+
     return (
         <div className="overlay">
             <Nav
                 authToken={authToken}
-                changeLogo={false}
+                changeLogo={true}
                 setShowModal={setShowModal}
                 showModal={showModal}
                 setIsSignUp={setIsSignUp}

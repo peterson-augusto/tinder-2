@@ -49,7 +49,7 @@ const OnBoarding = () => {
     return (
         <>
             <Nav
-                minimal={true}
+                changeLogo={true}
                 setShowModal={() => {
                 }}
                 showModal={false}
