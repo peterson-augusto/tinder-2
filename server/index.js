@@ -35,17 +35,17 @@ app.post('/signup', async (req, res) => {
             return res.status(409).send('Usuário já existe. Faça login')
         }
 
-        const sanitizedEmail = email.toLowerCase()
+        const lowerEmail = email.toLowerCase()
 
         const data = {
             user_id: generatedUserId,
-            email: sanitizedEmail,
+            email: lowerEmail,
             hashed_password: hashedPassword
         }
 
         const insertedUser = await users.insertOne(data)
 
-        const token = jwt.sign(insertedUser, sanitizedEmail, {
+        const token = jwt.sign(insertedUser, lowerEmail, {
             expiresIn: 60 * 24
         })
         res.status(201).json({ token, userId: generatedUserId })
