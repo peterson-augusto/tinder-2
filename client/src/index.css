@@ -156,6 +156,10 @@ nav .logo-container .logo {
     border-radius: 10px;
 }
 
+#show-gender #shogender {
+    position: absolute;
+}
+
 .onboarding form label {
     margin: 10px 0;
 }
